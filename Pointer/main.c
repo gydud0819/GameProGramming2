@@ -32,7 +32,7 @@
 * 주소를 알고 있으면 언제 어디서나 값을 가져올 수 있다. 
 * 
 * 언제? 변수를 미리 만들어 두고 사용을 했어야 한다. 프로그램 실행 중에 메모미를 할당하고 사용하는 방법 - 동적 할당
-* 어디에서? 함수에서 변경된 값은 외부에 적용이 안된다. Call by Reference (역참조?)
+* 어디에서? 함수에서 변경된 값은 외부에 적용이 안된다. Call by Reference 
 * 
 */
 
@@ -72,7 +72,7 @@ void SwapPreview(int numA, int numB)
 void Swap(int* numA, int* numB)
 {
 	int* temp;
-	temp = *numA;
+	temp = numA;
 	numA = numB;
 	numB = temp;
 	// 그냥 어려운게 아니라 whffk 어려운디;;;;;;;;;;;;;
