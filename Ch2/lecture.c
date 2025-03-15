@@ -5,8 +5,8 @@
 int GameScore = 0;	// 점수 늘리는 변수
 int GameItem = 0;	// 아이템 개수의 변수
 
-int PlayerX = 0;
-int PlayerY = 0;
+int PlayerX = 0;	// 플레이어 위치 변수
+int PlayerY = 0;	
 
 void ShowLecture()
 {
@@ -41,6 +41,8 @@ void ShowLecture()
 	IncreaseScore(&GameScore, 10);
 	printf("현재 점수 : %d\n", GameScore);
 
+	printf("===============================\n");
+
 	printf("강의 실습 2\n\n");
 
 	// 변수 3개 만들기
@@ -57,6 +59,8 @@ void ShowLecture()
 
 	printf("가중치 레벨 : %f, 레벨 : %d, 기본 공격력 : %d\n", weight, weaponLv, baseAP);
 
+	printf("===============================\n");
+
 	// 정리
 	// 함수를 이용해서 값을 변경한다.
 	// 주소를 이용해서도 값을 변경할 수 있다. 
@@ -67,6 +71,8 @@ void ShowLecture()
 	printf("기본 아이템의 개수 : %d\n", GameItem);
 	IncreaseItem(&GameItem, 2);
 	printf("획득한 아이템의 개수 : %d 개\n", GameItem);
+
+	printf("===============================\n");
 
 	// 플레이어의 좌표를 이동시키는 함수를 만들기
 	printf("플레이어의 X 위치 : %d, 플레이어의 Y 위치 : %d\n", PlayerX, PlayerY);

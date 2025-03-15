@@ -2,15 +2,13 @@
 
 void PointerExample()
 {
-	// sizeof()
 	int number1 = 0;
 	int* number1ptr = &number1;
 
 	double doublenumber1 = 1.0;
 	double* doublenumber1ptr = &doublenumber1;
 
-
-	printf("\n\n");
+	printf("===============================\n");
 	printf("포인터 연산 예제\n\n");
 
 	printf("int 데이터의 크기 : %d byte\n", sizeof(number1));
@@ -22,7 +20,7 @@ void PointerExample()
 	// x86으로 주소의 크기 실행시 ; 4 byte
 	// x64으로 주소의 크기 실행시 ; 8 byte
 	// 주소는 크기가 일정하다. 크기가 고정되어 있다. (동적할당할때 추가로 배울예정)
-	// 그럼 x32는? 
+	// 그럼 x32는? x86처럼 주소의 크기가 4 byte 이다. (궁금해서 인터넷에 찾아봄)
 	
 
 	// 주소 자체를 더하기 vs 주소를 참조해서 더하기 
@@ -41,7 +39,7 @@ void PointerExample()
 	// GameScore 포인터를 변경해서 저장하는 기능을 구현할 수 없게 된다.
 
 	// Call by Value와 Call by reference 를 구분해서 사용해야하는 이유
-	// Value = Stack(?)| reference = heap(?)	
+	// Value = Stack(?)| reference = heap(?)	Value는 스택과 비슷한 결을 지니고 있고 reference는 힙과 비슷한 결을 지니고 있다.
 
 	printf("number1ptr의 값을 출력 : %d\n", (*number1ptr) + 1);
 

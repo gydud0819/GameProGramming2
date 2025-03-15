@@ -4,8 +4,8 @@
 
 int main()
 {
-	int playerX = 0;
-	int playerY = 0;
+	int playerX = 10;
+	int playerY = 10;
 
 	while (true)	// 프로그램을 계속 실행시켜라
 	{
@@ -13,20 +13,28 @@ int main()
 		{
 			if(GetAsyncKeyState(VK_LEFT))	// 방향키 왼쪽
 			{
-				playerX -= 2;
+				GetInput(&playerX, &playerY);
+				//playerX -= 2;
 			}
 			if (GetAsyncKeyState(VK_RIGHT))
 			{
-				playerX += 2;
+				GetInput(&playerX, &playerY);
+				//playerX += 2;
 			}
 			if (GetAsyncKeyState(VK_UP))
 			{
-				playerY--;
+				GetInput(&playerX, &playerY);
+				//playerY--;
 			}
 			if (GetAsyncKeyState(VK_DOWN))
 			{
-				playerY++;
+				GetInput(&playerX, &playerY);
+				//playerY++;
 			}
 		}
+		system("cls");
+		printf("●");
+		
+		Sleep(50);
 	}
 }
