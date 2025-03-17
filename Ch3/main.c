@@ -25,6 +25,8 @@
 *
 * 동적 할당 예시
 * 메모리를 직접 할당 해준다. 동적할당으로 할당된 메모리는 스스로 해제할 수 없다. 사용자가 직접 해제를 해줘야 한다.
+* 포인터 변수  = malloc(sizeof(데이터 타입)); 으로 쓰며 memory allocate (malloc)를 줄여 malloc이라 한다.
+* num1ptr = malloc(sizeof(int));	// 4byte 크기만큼 메모리 공간을 배정해라(할당해라) 라는 의미이다.
 * 지역 변수 - 함수가 종료될 때 같이 해제된다.
 * 함수 안에서 동적할당된 메모리는 해제되지 않는다.
 * 해당 메모리의 사용이 끝이나면 수동으로 해제를 해줘야 한다.
@@ -44,9 +46,7 @@
 #include "Input.h"
 #include "Inventory.h"
 
-
-
-void SetMemoryAndValue(int amount)	// 주소를 하나 받아와서 주소의 값ㅇ르 amount 값으로 
+void SetMemoryAndValue(int amount)	// 주소를 하나 받아와서 주소의 값을 amount 값으로 
 {
 	int* num1ptr = NULL;			// 정수(4byte 정수 값을 저장하는 형태)
 	// numptr 메모리 변수(지역 변수), 주소의 값을 변경한다. 
@@ -69,10 +69,6 @@ int main()
 
 	int number = 1;
 	int* numberptr = &number;
-
-	//int* num1ptr = NULL;	// 정수(4byte 정수 값을 저장하는 형태)
-	//						// 새로운 주소를 할당해줄 수 있다? memory allocate (malloc)
-	//num1ptr = malloc(sizeof(int));	// 4byte 크기만큼 메모리 공간을 배정해라
 
 	// 컴퓨터의 메모리 공간에 값을 저장할 수 있는 주소를 할당했다.
 	// 조건문, 특정 상황에서만 코드를 실행한다. (동적할당)
@@ -103,7 +99,7 @@ int main()
 
 		if (intputnumber == 1)
 		{
-			IncreaseInventoryCount(inventoryptr, 16);
+			IncreaseInventoryCount(inventoryptr, 4);
 		}
 		else
 		{
@@ -111,7 +107,6 @@ int main()
 
 		}
 	}
-
 
 	free(inventoryptr);
 }
