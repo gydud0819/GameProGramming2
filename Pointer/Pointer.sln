@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input", "Input", "{71D40E90
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlayerInput", "..\PlayerInput\PlayerInput.vcxproj", "{DEF77D31-8A58-4CB3-83DC-A13AE8FCCDD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CH03", "CH03", "{0E31D971-22A3-49C4-9464-0C2B6CEFFBD6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch3", "..\Ch3\Ch3.vcxproj", "{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +49,14 @@ Global
 		{DEF77D31-8A58-4CB3-83DC-A13AE8FCCDD0}.Release|x64.Build.0 = Release|x64
 		{DEF77D31-8A58-4CB3-83DC-A13AE8FCCDD0}.Release|x86.ActiveCfg = Release|Win32
 		{DEF77D31-8A58-4CB3-83DC-A13AE8FCCDD0}.Release|x86.Build.0 = Release|Win32
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Debug|x64.ActiveCfg = Debug|x64
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Debug|x64.Build.0 = Debug|x64
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Debug|x86.ActiveCfg = Debug|Win32
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Debug|x86.Build.0 = Debug|Win32
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Release|x64.ActiveCfg = Release|x64
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Release|x64.Build.0 = Release|x64
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Release|x86.ActiveCfg = Release|Win32
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +64,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8AECD1CA-8825-44E5-8F02-C95BF1B2C229} = {3CA723CA-A519-4813-A8AC-C0EB8B9099FB}
 		{DEF77D31-8A58-4CB3-83DC-A13AE8FCCDD0} = {71D40E90-4A85-4F81-8075-F4482B8956BB}
+		{C728BF28-7D7E-4D10-A5BF-E683E0DB9AD8} = {0E31D971-22A3-49C4-9464-0C2B6CEFFBD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F635EB6-B17A-4155-B13C-22DC99F4A88D}
