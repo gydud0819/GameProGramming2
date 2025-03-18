@@ -21,6 +21,8 @@ int main()
 {
 	printf("ch4\n");
 
+	printf("============================================================\n");
+
 	printf("배열 예시 : 성적표 만들기\n");
 
 	int ScoreA = 100;	// 국어
@@ -42,6 +44,8 @@ int main()
 		printf("점수  : %d\n", scores[i]);
 	}
 
+	printf("============================================================\n");
+
 	//printf("국어 : %d, 수학 : %d, 영어 : %d\n", ScoreA, ScoreB, ScoreC);
 
 	// 인벤토리에 들어갈 아이템 정의
@@ -59,7 +63,7 @@ int main()
 	// 아이템의 데이터를 설정한다. (게임 고유의 데이터일수도 있고, 세이브 데이터 일수도 있다.)
 	int itemCounts[5] = { 1,2,3,4,5};
 	int itemIndexs[5] = { 1,2,3,4,5};
-	char* itemNames[5] = { "AAA", "BBB", "CCC", "DDD", "EEE" };
+	char* itemNames[5] = { "AAA", "BBB", "CCC", "DDD", "EEE" };		// 배열을 포인터처럼 사용
 
 	printf("모든 아이템을 열람한다.\n\n");
 
@@ -68,6 +72,8 @@ int main()
 		printf("아이템 번호 : %d, 아이템 이름 : %s, 아이템 수량 : %d개\n", itemIndexs[i], itemNames[i], itemCounts[i]);
 
 	}
+
+	printf("============================================================\n");
 
 	ShowItemInfo();	// 아이템 정보를 나타내는 함수
 
@@ -106,13 +112,15 @@ int main()
 	printf("%c\n", scoreName2[4]);
 	printf("%c\n", scoreName2[5]);
 	printf("%c\n", scoreName2[6]);
-	printf("%d\n", scoreName2[7]);
-	printf("%d\n", scoreName2[8]);
+	printf("%d\n", scoreName2[7]);		// 값을 할당하고도 공간이 남을 경우 0이나 쓰레기값으로 공간을 채운다.
+	printf("%d\n", scoreName2[8]);		// 저장할 공간이 남으면 그 공간은 0으로 메꾸는건가? 아님 아무것도 아닌 NULL로 메꾸는건가? 이것도 아니면 쓰레기값으로 메꾸는건가?
 
 	// "국어" -> 문자열		메모리 주소| 국 | 어 |
 	// 메모리의 첫번째 주소를 알고, 메모리의 크기를 알면 글자를 한번에 출력할 수 있다.
 	// "국"이라는 문자 주소로 저장 되어 있다.
 	// 배열도 포인터 주소이다. 
+
+	printf("============================================================\n");
 
 	char* scoreptr = "Math";
 
@@ -132,10 +140,12 @@ int main()
 	// 단어의 배열을 표현하는 방법
 	// 이름은 단어의 배열
 
-	char ItemName[10] = "이름";	// 10칸을 미리 확보해서 가져온다.
-	char* itemNameptr = "이름2";	// 주소로 가져온다.
+
+	char ItemName[10] = "이름";	// 10칸을 미리 확보해서 가져온다.		
+	char* itemNameptr = "이름2";	// 주소로 가져온다.		
 
 	printf("%s, %s\n", ItemName, itemNameptr);
 
-	//ItemExample();
+	// 포인터와 인덱스를 이용해 값에 접근할 수 있다. (둘다 주소를 통해 값을 간접적으로 접근할 수 있다.)
+	ItemExample();	// 포인터와 인덱스를 이용한 예시 함수
 }
