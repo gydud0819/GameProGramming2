@@ -68,15 +68,20 @@ void ClaculateCircleInfo(Circle circle);
 // 플레이어의 좌표를 이용해 플레이어의 정보를 출력하는 함수 만들기 
 typedef struct MyPlayer
 {
-	char* playerName;
-	Pos playerPos;// 1. 좌표
+	char* playerName;		// 플레이어 이름
+	// 1. 좌표
+	Pos playerPos;			// 플레이어 좌표
 	// 2. 스텟
+	int* playerBasicLv;		// 플레이어의 기본 레벨
 	// 3. 아이템
+	char* ItemName;			// 아이템 이름
+	int* ItemLv;			// 아이템의 레벨
+	int* ItemPower;			// 아이템의 공격력
 }Player;
 
 void ShowPlayerCurrentPos(Player player);	// 플레이어의 현재 위치를 보여주는 함수 
 
-//void MovePlayer(Player1 player);
+//void MovePlayer(Player player);
 
-//void ShowPlayerCurrentPos2(const Player1* player);
+//void ShowPlayerCurrentPos2(const Player* player);
 
