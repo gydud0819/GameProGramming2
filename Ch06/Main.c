@@ -23,10 +23,10 @@
 * 3. *playerptr.playerName 연산자의 우선순위가 존재하기 때문에 *(playerptr.playerName)
 * => playerptr 주소에서 playerName을 접근한 후에 그 주소의 값을 역참조 해라라는 의미이다.
 * 4. 화살표 연산자 : 구조체의 주소 변수 -> *(playerptr.접근할 데이터)
-{
-	(*playerptr).playeName;
-	playerptr->playerName;
-}
+	{
+		(*playerptr).playeName;
+		playerptr->playerName;
+	}
 */
 
 #include <stdio.h>
