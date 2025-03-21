@@ -49,8 +49,7 @@ void InteractWithItem(Player* playerptr, Item* itemptr)
 	if (ComPareCOORD(playerptr->pos, itemptr->pos))
 	{
 		itemptr->hasItem = true;
-
-		
+			
 	}
 }
 
@@ -62,6 +61,7 @@ void ShowplayerItemInfo(Item* itemptr)
 
 	if (itemptr->hasItem)
 	{
+		GotoXY2(50, 10);
 		printf("%s À»(¸¦) È¹µæÇß½À´Ï´Ù.", itemptr->itemName);
 
 	}
@@ -75,6 +75,7 @@ void ShowAllPlayerItemInfo(Item* itemArray, int length)
 							// hasItem == true ÀÏ¶§ ½ÇÇà
 		if ((itemArray+i)->hasItem == true)
 		{
+			//GotoXY2(50, 10);
 			printf("%s À»(¸¦) È¹µæÇß½À´Ï´Ù.", (itemArray+i)->itemName);
 		}
 		else

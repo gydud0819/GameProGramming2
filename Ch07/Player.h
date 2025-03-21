@@ -37,4 +37,4 @@ void GotoXY2(int posX, int posY);		// 좌표 이동 함수
 void MoveXY2(COORD pos);				// 특정 좌표로 이동하라는 함수 // 선언하는 인자가 다르면 함수 이름을 같게 쓸 수 있다. (C++부터)
 
 // 두 개의 좌표를 매개변수로 받아와서 같은지 비교하는 함수
-BOOL ComPareCOORD(COORD pos1, COORD pos2);	// 같으면 true 다르면 false 반환
+BOOL ComPareCOORD(COORD pos1, COORD pos2);	// 같으면 true 다르면 false를 반환한다. 

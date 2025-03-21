@@ -38,7 +38,7 @@
 
 int main()
 {
-	// 플레이어의 기본 데이터 설정하기 ( 함수로 만들어서 간단하게 하기)
+	// 플레이어의 기본 데이터 설정하기 ( 함수로 만들어서 간단하게 하기. 추후에 할 예정이다.)
 	
 	COORD playerpos = { 0,0 };
 	Player player = { "플레이어", playerpos };	// 이름, 좌표
@@ -60,7 +60,7 @@ int main()
 		ShowPlayer(&player);
 
 		MoveXY2(itemAPos);
-		printf("■");
+		printf("◎");
 
 		InteractWithItem(&player, &itemA);		// 주소에 데이터가 변경되지 않았다. -> Call by Value, Reference
 		ShowplayerItemInfo(&itemA);
