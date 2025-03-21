@@ -23,6 +23,7 @@ void GameStart()
 	POS playerPos = { 0,0 };	// 플레이어 시작 좌표
 	Player MyPlayer = { "이재준", playerPos };
 
+	// 아이템 정보 입력
 	POS ItemPos = { 17,23 };	// 아이템 좌표
 	ITEM Item = { "삐에로", ItemPos, &ItemPower, &ItemLv };
 
@@ -49,11 +50,11 @@ void InputPlayerKey(Player* playerptr, ITEM* itemptr)
 	{
 		if (GetAsyncKeyState(VK_LEFT))// 키보드의 입력키 x좌표를 1
 		{
-			playerptr->playerPos.posX -= 1;
+			playerptr->playerPos.posX -= 1;		// --; 로 써도 될듯
 		}
 		else if (GetAsyncKeyState(VK_RIGHT))
 		{
-			playerptr->playerPos.posX += 1;
+			playerptr->playerPos.posX += 1;		// ++;
 		}
 		else if (GetAsyncKeyState(VK_UP))
 		{
@@ -66,7 +67,7 @@ void InputPlayerKey(Player* playerptr, ITEM* itemptr)
 		if (playerptr->playerPos.posX == itemptr->ItemPos.posX && playerptr->playerPos.posY == itemptr->ItemPos.posY)
 		{
 			bool ItemExit = true;		// 아이템과 플레이어 좌표가 일치하면 아이템을 획득했다라고 활성화한다.
-			GotoXY(60, 20);
+			GotoXY(50, 20);
 			printf("아이템을 획득했습니다!");
 
 		}
