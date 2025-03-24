@@ -26,21 +26,21 @@
 
 char stage1[STAGE_HEIGHT][STAGE_WIDTH + 1] =
 {
-	"#######",		// char 배열
+	"######",		// char 배열
 	"#    #",		// char 배열
 	"#    #",		// char 배열
 	"#    #",		// char 배열
-	"#######",		// char 배열
+	"######",		// char 배열
 	
 };
 
 char stage2[STAGE_HEIGHT][STAGE_WIDTH + 1] =
 {
-	"#######",	// char 배열
+	"######",	// char 배열
 	"#    #",
-	"#######",
+	"######",
 	"#    #",
-	"#######",
+	"######",
 };
 
 
@@ -67,15 +67,12 @@ int main()
 	// 플레이어 코드
 
 	Player player;
-
 	Player* playerptr = &player;
-	
 	char inputA[10] = "";
 
 	printf("플레이어의 이름을 입력해주세요.\n");
 	scanf_s("%s", inputA, 10);
-	SetPlayer(&playerptr, inputA);
-	printf("플레이어의 이름 : %s\n", player.playerName);
+	SetPlayer(&player, inputA);
 	ShowPlayerInfo(&player);
 
 	// 2차원 배열
@@ -85,11 +82,10 @@ int main()
 
 	// 가로x1줄 세로xn줄 출력
 
-	for (int i = 0; i = STAGE_HEIGHT; i++)
+	for (int i = 0; i < STAGE_HEIGHT; i++)
 	{
-		printf("%s\n", stage1[i]);
+		//printf("%s\n", stage1[i]);	// 맵을 2개를 만들었기 때문에 호출하고 싶은 것을 호출하면 된다.
+		printf("%s\n", stage2[i]);
 	}
 
-	printf("%s", stage1);
-	printf("%s", stage2);
 }

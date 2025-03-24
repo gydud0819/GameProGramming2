@@ -19,7 +19,6 @@ void SetPlayerName(char* playerNameptr)
 
 	strcpy_s(playerNameptr, 20, input);	// 저장된 문자열의 주소, 가져올 문자열의 주소 
 
-	//printf("");
 }
 
 void SetPlayer(Player* player, const char* Name)
@@ -31,15 +30,9 @@ void SetPlayer(Player* player, const char* Name)
 		printf("[경고] 플레이어에 주소를 입력해주세요.\n");
 		return;
 	}
-	//printf("사용할 이름을 입력해주세요.\n");
 
-	//player->playername[NAMELENGTH];
+	strcpy_s(player->playerName, NAMELENGTH, Name);
 
-	//scanf_s("%s", player->playername[NAMELENGTH]);
-
-	strcpy_s((*player).playerName, NAMELENGTH, Name);
-
-	
 }
 
 void ShowPlayerInfo(Player* player)
