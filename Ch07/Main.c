@@ -1,5 +1,5 @@
 /*
-* 작성일	: 2025-03-21
+* 작성일	: 2025-03-21 / 03-24 내용 수정
 * 작성자	: 박효영
 * 주제	: 구조체로 게임 만들기
 */
@@ -62,9 +62,10 @@ int main()
 		MoveXY2(itemAPos);
 		printf("◎");
 
-		InteractWithItem(&player, &itemA);		// 주소에 데이터가 변경되지 않았다. -> Call by Value, Reference
+
+		InteractWithItem(&player, &AllItem[0]);		// 주소에 데이터가 변경되지 않았다. -> Call by Value, Reference
 		ShowplayerItemInfo(&itemA);
-		//ShowAllPlayerItemInfo(AllItem, 2);
+		ShowAllPlayerItemInfo(AllItem, 2);
 
 		// 배열을 매개변수로 받아와서 각각의 데이터에 접근한다.
 

@@ -18,7 +18,7 @@ typedef struct _Item    // 아이템 구조체
 {
 	char* itemName;
 	COORD pos;
-	bool hasItem;		// 아이템을 가지고 있는지 확인하고 있으면 true로 반환한다.
+	BOOL hasItem;		// 아이템을 가지고 있는지 확인하고 있으면 true로 반환한다.
 	// 이미지 를 가져올 수 도 있다.
 }Item;
 
