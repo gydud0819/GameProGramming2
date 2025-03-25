@@ -37,5 +37,5 @@ void SetPlayer(Player* player, const char* Name)
 
 void ShowPlayerInfo(Player* player)
 {
-	printf("플레이어의 이름 : %s", player->playerName);
+	printf("플레이어의 이름 : %s\n", player->playerName);
 }

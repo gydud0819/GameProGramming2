@@ -78,7 +78,7 @@ int main()
 	// 2차원 배열
 
 	printf("\n");
-	printf("맵 출력\n");
+	printf("맵 출력\n\n");
 
 	// 가로x1줄 세로xn줄 출력
 
