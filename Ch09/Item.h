@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+#define STAGE_COL2 20
+#define STAGE_ROW2 30
 
 /*
 * 아이템 구조체
@@ -15,8 +17,19 @@
 typedef struct _ITEM
 {
 	char* itemName;			// 아이템 이름
-	//int* itemAttaPower;		// 아이템의 공격력
-	char (*itemImage)
+	char (*itemImage)[STAGE_ROW2 + 1];
+	char* itemStat;		// 아이템의 능력치
 }Item;
 
-void SetItem(Item* itemptr);
+void SetItem(Item* itemptr, int index2);
+
+#define STAGE_COL3 50
+#define STAGE_ROW3 50
+typedef struct _CHARACTER
+{
+	char* characterName;			// 아이템 이름
+	char (*characterImage)[STAGE_ROW3 + 1];
+	//char* itemStat;		// 아이템의 능력치
+}Character;
+
+void SetCharacter(Character* characterptr, int index3);

@@ -1,6 +1,12 @@
+/*
+* 작성일	: 2025-03-25
+* 작성자	: 박효영
+* 주제	: 2차원 배열
+*/
+
 #include "2DimensionArray.h"
 #include "Stage.h"
-
+#include "Item.h"
 
 int main()
 {
@@ -24,5 +30,26 @@ int main()
 	for (int i = 0; i < STAGE_COL; i++)
 	{
 		printf("%s\n", stage2.map[i]);
+	}
+
+	Item item1;
+	SetItem(&item1, 1);
+	printf("아이템 이름: %s\n", item1.itemName);
+	printf("아이템 효과: %s\n", item1.itemStat);
+	printf("아이템 이미지 출력\n\n");
+
+	for (int i = 0; i < STAGE_COL2; i++)
+	{
+		printf("%s\n", item1.itemImage[i]);
+	}
+
+	Character character;
+	SetCharacter(&character, 1);
+	printf("캐릭터 이름: %s\n", character.characterName);
+	printf("캐릭터 이미지 출력\n\n");
+
+	for (int i = 0; i < STAGE_COL3; i++)
+	{
+		printf("%s\n", character.characterImage[i]);
 	}
 }
