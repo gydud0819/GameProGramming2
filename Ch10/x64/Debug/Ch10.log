@@ -1,0 +1,5 @@
+﻿  Main.c
+C:\Users\Administrator\Desktop\GameProGramming2\Ch10\Stage.h(20,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 '_STAGE' 왼쪽은 무시됩니다.
+  (소스 파일 'Main.c'을(를) 컴파일하는 중)
+  
+  Ch10.vcxproj -> C:\Users\Administrator\Desktop\GameProGramming2\Pointer\x64\Debug\Ch10.exe
