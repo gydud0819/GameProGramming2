@@ -1,6 +1,6 @@
 #include "Stage.h"
 
-char stage1[STAGE_HEIGHT][STAGE_WIDTH + 1] =
+char stage1[STAGE_HEIGHT][STAGE_WIDTH + 1] =	// Ã¹¹øÂ° ¸Ê
 {
 	"####################",		// 1
 	"#&                 #",
@@ -24,7 +24,7 @@ char stage1[STAGE_HEIGHT][STAGE_WIDTH + 1] =
 	"####################",		// 20
 };
 
-char stage2[STAGE_HEIGHT][STAGE_WIDTH + 1] =
+char stage2[STAGE_HEIGHT][STAGE_WIDTH + 1] =	// µÎ¹øÂ° ¸Ê
 {
 	"####################",		// 1
 	"#     #####  ###   #",

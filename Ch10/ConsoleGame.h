@@ -38,15 +38,14 @@ void ShowStage(char (*Stage)[STAGE_WIDTH +1], COORD pos);
 
 // 플레이어의 좌표, stage 안의 문자값(&)
 
-// x y 좌표에 들어있는 문자를 반환하는 함수
-char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos);
+char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos); // x y 좌표에 들어있는 문자를 반환하는 함수
 
 char ReturnValueFromStruct(char(*Stage)[STAGE_WIDTH + 1], COORD pos);
 
-// 다음 스테이지로 이동이 가능한가?
+// 다음 스테이지로 이동이 가능한지 물어보는 함수
 BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitCharacter);
 
-// 이동하라.
+// 다음 스테이지로 넘어가라는 함수
 void NextStage(char(*Stage)[STAGE_WIDTH + 1], COORD stagePos);
 
 //typedef struct _PLAYER

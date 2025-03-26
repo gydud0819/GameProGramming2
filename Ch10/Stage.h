@@ -6,13 +6,13 @@
 char stage1[STAGE_HEIGHT][STAGE_WIDTH + 1];
 char stage2[STAGE_HEIGHT][STAGE_WIDTH + 1];
 
-typedef struct _STAGEPOS
+typedef struct _STAGEPOS		// 스테이지 위치 이동시키는 구조체
 {
 	int x;
 	int y;
 }StagePos;
 
-typedef struct _STAGE
+typedef struct _STAGE			// 스테이지 구조체
 {
 	char* name;
 	char* (*stage)[STAGE_WIDTH + 1];

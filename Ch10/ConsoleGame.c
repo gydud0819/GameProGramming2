@@ -39,13 +39,13 @@ BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitChara
 
 	if (stageChar == exitCharacter)
 	{
-		printf("다음 스테이지로 이동합니다!\n");
+		printf("다음 스테이지로 이동합니다!\n");	// 특정 위치에 도달하면 true를 반환한다.
 	
 		return true;
 	}
 	else
 	{
-		printf("넘어갈 수 없습니다.\n");
+		printf("넘어갈 수 없습니다.\n");			// 도달하지 못하면 false를 반환한다.
 		return false;
 	}
 	return 0;
