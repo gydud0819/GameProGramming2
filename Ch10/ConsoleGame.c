@@ -48,12 +48,22 @@ BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitChara
 		printf("넘어갈 수 없습니다.\n");			// 도달하지 못하면 false를 반환한다.
 		return false;
 	}
-	return 0;
+	
 }
 
 void NextStage(char(*Stage)[STAGE_WIDTH + 1], COORD stagePos)
 {
 
+}
+
+COORD plusPos(COORD pos1, COORD pos2)
+{
+	SHORT newPosX = pos1.X + pos2.X;
+	SHORT newPosY = + pos1.Y + pos2.Y;
+
+	COORD resultPos = { newPosX, newPosY };
+	
+	return resultPos;
 }
 
 //void GetPlayerKeyInput(COORD pos)

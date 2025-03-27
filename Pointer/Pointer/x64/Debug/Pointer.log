@@ -1,1 +1,9 @@
-﻿  Pointer.vcxproj -> C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Pointer.exe
+﻿  main.c
+C:\Users\DPC\Desktop\GameProGramming2\Pointer\main.c(145,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 '__int64 **'입니다.
+C:\Users\DPC\Desktop\GameProGramming2\Pointer\main.c(145,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) __int64 **' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\DPC\Desktop\GameProGramming2\Pointer\main.c(186,7): warning C4047: '함수': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\DPC\Desktop\GameProGramming2\Pointer\main.c(186,7): warning C4024: 'Swap': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\DPC\Desktop\GameProGramming2\Pointer\main.c(186,13): warning C4047: '함수': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\DPC\Desktop\GameProGramming2\Pointer\main.c(186,13): warning C4024: 'Swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+  LINK : C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Pointer.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  Pointer.vcxproj -> C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Pointer.exe

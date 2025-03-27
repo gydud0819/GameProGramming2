@@ -48,6 +48,8 @@ BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitChara
 // 다음 스테이지로 넘어가라는 함수
 void NextStage(char(*Stage)[STAGE_WIDTH + 1], COORD stagePos);
 
+COORD plusPos(COORD pos1, COORD pos2);
+
 //typedef struct _PLAYER
 //{
 //	int playerX;
