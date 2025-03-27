@@ -17,4 +17,4 @@ typedef struct _STAGE			// 스테이지 구조체
 	char* name;
 	char* (*stage)[STAGE_WIDTH + 1];
 	StagePos stagePos;
-};
+}Stage;

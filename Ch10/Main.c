@@ -1,5 +1,6 @@
 #include "ConsoleGame.h"
 #include "Stage.h"
+#include "Player.h"
 
 /*
 * stage1에 탈출구를 만들고 탈출구 위치에 플레이어가 도달하면, 현재 화면을 지우고  stage2로 넘어가도록 만들기
@@ -25,6 +26,19 @@ int main()
 	printf("스테이지의 특정 좌표 문자 값 : %c\n", tempChar);
 
 	//GotoXY(5, 19);		// 탈출구 위치.
+
+	// 플레이어 구조체 함수 사용
+	Player player;
+
+	SetPlayerName(&player);
+	GetPlayerName(player);
+
+	// enum 예제
+	//system("cls");
+	Color color = RED;
+	SelectColor(color);
+
+	ShowPlayerInfo(&player);
 
 	if (CanMoveStage(stage1, tempPos, '&'))
 	{
