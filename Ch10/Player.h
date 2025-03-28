@@ -36,13 +36,14 @@ typedef struct _Player
 }Player;
 
 void GetPlayerName(Player player);		// 플레이어 이름을 가져오는 함수
-
 void SetPlayerName(Player* playerptr);	// 플레이어 이름을 보여주는 함수
-
 void SetPlayerInput(Player* playerptr);
+void SetPlayerRace(Player* playerptr);
+
+void SetPlayer(Player* playerptr);
 
 void SelectColor(Color color);
 
 //void GetPlayerRace();
 
-void ShowPlayerInfo(Player* playerptr);
+void ShowPlayerInfo(Player* playerptr, COORD UIPos);

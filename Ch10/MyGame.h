@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ConsoleGame.h"
+#include "Player.h"
 
 // GetAsync 키로 이동하는 것 구현하기
 
@@ -17,10 +18,5 @@
 
 // 특정 아이템을 획득하면 메뉴 키를 통해서 획득한 아이템의 정보를 확인한다. 
 
-typedef struct PLAYER
-{
-	int PosX;
-	int PosY;
-}Player;
+void GameStart();
 
-void GetPlayerKeyInput(Player* playerptr, COORD pos);

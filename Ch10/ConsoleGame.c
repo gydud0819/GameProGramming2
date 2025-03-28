@@ -39,13 +39,14 @@ BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitChara
 
 	if (stageChar == exitCharacter)
 	{
-		printf("다음 스테이지로 이동합니다!\n");	// 특정 위치에 도달하면 true를 반환한다.
-	
+		//GotoXY(80, 0);
+		//printf("다음 스테이지로 이동합니다!\n");	 // 특정 위치에 도달하면 true를 반환한다.
 		return true;
 	}
 	else
 	{
-		printf("넘어갈 수 없습니다.\n");			// 도달하지 못하면 false를 반환한다.
+		//GotoXY(80, 2);							// 좌표를 이용해 UI 설정을 해서 띄울 수도 있다. 
+		//printf("넘어갈 수 없습니다.\n");			// 도달하지 못하면 false를 반환한다.
 		return false;
 	}
 	
@@ -53,7 +54,19 @@ BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitChara
 
 void NextStage(char(*Stage)[STAGE_WIDTH + 1], COORD stagePos)
 {
+	printf("다음 스테이지로 넘어갑니다.\n");
 
+	// 콘솔 창을 지워준다.
+	system("cls");
+	// 다음 스테이지를 좌표를 이용해 그려준다.
+	ShowStage(stage2, stagePos);
+
+	/*COORD stagePos2 = { 40,0 };
+	ShowStage(stage2, stagePos2);
+
+	COORD tempPos = { 1,1 };*/
+
+	
 }
 
 COORD plusPos(COORD pos1, COORD pos2)

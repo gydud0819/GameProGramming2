@@ -3,6 +3,9 @@
 #define STAGE_WIDTH 20		// 가로
 #define STAGE_HEIGHT 20		// 세로
 
+#define STAGE_WIDTH2 50			// 가로2
+#define STAGE_HEIGHT2 30		// 세로2
+
 char stage1[STAGE_HEIGHT][STAGE_WIDTH + 1];
 char stage2[STAGE_HEIGHT][STAGE_WIDTH + 1];
 

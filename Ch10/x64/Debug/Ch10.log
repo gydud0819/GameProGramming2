@@ -1,3 +1,6 @@
-﻿  Player.c
-C:\Users\DPC\Desktop\GameProGramming2\Ch10\Player.c(71,9): warning C4101: 'tempPlayer' :참조되지 않은 지역 변수입니다.
-  Ch10.vcxproj -> C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Ch10.exe
+﻿  ConsoleGame.c
+  MyGame.c
+  Player.c
+  Stage.c
+  코드를 생성하고 있습니다...
+  Ch10.vcxproj -> C:\Users\Administrator\Desktop\GameProGramming2\Pointer\x64\Debug\Ch10.exe
