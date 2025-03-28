@@ -33,20 +33,20 @@
 void GotoXY(int x, int y);
 // 2차원 배열을 주소로 가져오려면 어떤 형태로 선언해야 할까?
 // char (*Stage)[가로의 길이]
-void ShowStage(char (*Stage)[STAGE_WIDTH +1], COORD pos);
+void ShowStage(char (*Stage)[STAGE_WIDTH2 +1], COORD pos);
 
 
 // 플레이어의 좌표, stage 안의 문자값(&)
 
-char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos); // x y 좌표에 들어있는 문자를 반환하는 함수
+char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD pos); // x y 좌표에 들어있는 문자를 반환하는 함수
 
-char ReturnValueFromStruct(char(*Stage)[STAGE_WIDTH + 1], COORD pos);
+char ReturnValueFromStruct(char(*Stage)[STAGE_WIDTH2 + 1], COORD pos);
 
 // 다음 스테이지로 이동이 가능한지 물어보는 함수
-BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitCharacter);
+BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD playerPos, char exitCharacter);
 
 // 다음 스테이지로 넘어가라는 함수
-void NextStage(char(*Stage)[STAGE_WIDTH + 1], COORD stagePos);
+void NextStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD stagePos);
 
 COORD plusPos(COORD pos1, COORD pos2);
 

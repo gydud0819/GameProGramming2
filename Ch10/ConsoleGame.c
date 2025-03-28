@@ -6,9 +6,9 @@ void GotoXY(int x, int y)	// 콘솔 창에 x y 좌표로 커서의 위치를 이동시킨다.
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }
 
-void ShowStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos)
+void ShowStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD pos)
 {
-	for (int i = 0; i < STAGE_HEIGHT; i++)
+	for (int i = 0; i < STAGE_HEIGHT2; i++)
 	{
 		GotoXY(pos.X, pos.Y + i);	// pos 안의 x y 좌표로 이동시켜라는 의미.
 		printf("%s", Stage[i]);
@@ -24,7 +24,7 @@ void ShowStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos)
 
 }
 
-char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos)
+char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD pos)
 {
 	char returnValue = ' ';
 
@@ -33,7 +33,7 @@ char ReturnValueFromStage(char(*Stage)[STAGE_WIDTH + 1], COORD pos)
 	return returnValue;
 }
 
-BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitCharacter)
+BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD playerPos, char exitCharacter)
 {
 	char stageChar = ReturnValueFromStage(Stage, playerPos);
 
@@ -52,14 +52,14 @@ BOOL CanMoveStage(char(*Stage)[STAGE_WIDTH + 1], COORD playerPos, char exitChara
 	
 }
 
-void NextStage(char(*Stage)[STAGE_WIDTH + 1], COORD stagePos)
+void NextStage(char(*Stage)[STAGE_WIDTH2 + 1], COORD stagePos)
 {
 	printf("다음 스테이지로 넘어갑니다.\n");
 
 	// 콘솔 창을 지워준다.
 	system("cls");
 	// 다음 스테이지를 좌표를 이용해 그려준다.
-	ShowStage(stage2, stagePos);
+	ShowStage(stage4, stagePos);
 
 	/*COORD stagePos2 = { 40,0 };
 	ShowStage(stage2, stagePos2);

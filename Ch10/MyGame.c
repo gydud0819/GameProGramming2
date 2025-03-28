@@ -11,7 +11,7 @@ void GameStart()
 
 	// 스테이지 출력
 	COORD stagePos = { 10,0 };
-	ShowStage(stage1, stagePos);
+	ShowStage(stage3, stagePos);
 
 	player.pos = plusPos(playerPos, stagePos);		// 스테이지 좌표와 플레이어 좌표를 더해 플레이어 위치를 옮기겠다는 의미.
 
@@ -33,9 +33,9 @@ void GameStart()
 		COORD playerStagePos = { player.pos.X - stagePos.X, player.pos.Y - stagePos.Y };	// 위치를 옮기려면 플레이어 좌표에서 스테이지 좌표를 각각 빼줘야한다.
 
 		// 2. stage에 특별한 문자와 값이 같으면 다음 스테이지로 이동하는 것 구현
-		if (CanMoveStage(stage1, playerStagePos, '&'))
+		if (CanMoveStage(stage3, playerStagePos, '&'))
 		{
-			NextStage(stage2, stagePos);
+			NextStage(stage4, stagePos);
 			player.pos = plusPos(playerPos, stagePos);		// 스테이지를 이동했을 때 어디서 시작할건지 쓰는 코드.
 		}
 
