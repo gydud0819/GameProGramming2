@@ -27,7 +27,7 @@
 
 /*
 * 파일을 저장하는 함수
-* fopen - 불러올 경로를 지정해준다. 어떻게 가져올건지 선택을한다. (읽을 때 : read, 쓸 때 : write, 
+* fopen - 불러올 경로를 지정해준다. 어떻게 가져올건지 선택을한다. (읽을 때 : read, 쓸 때 : write, 추가할 때 : append)
 */
 
 /*
@@ -43,7 +43,7 @@
 
 typedef struct _PEOPLE
 {
-	char name[4];
+	char name[20];
 	int age;
 }people;
 
@@ -94,11 +94,14 @@ int main()
 	fprintf(fptr, "%s %d\n", myScore.nickName, myScore.score);
 
 
-	//Character player2 = { "Catcher", 750 };
-	//fprintf(fptr, "%s %d\n", player2.nickName, player2.score);
+	Character player2 = { "Catcher", 750 };
+	fprintf(fptr, "%s %d\n", player2.nickName, player2.score);
 
-	//Character player3 = { "Infilder", 500 };
-	//fprintf(fptr, "%s %d\n", player3.nickName, player3.score);
+	Character player3 = { "Infilder", 500 };
+	fprintf(fptr, "%s %d\n", player3.nickName, player3.score);
+
+	Character player4 = { "Outfilder", 999 };
+	fprintf(fptr, "%s %d\n", player4.nickName, player4.score);
 
 
 	fclose(fptr);
@@ -110,14 +113,14 @@ int main()
 	FILE* fptr2 = fopen("example\\example2.txt", "r");
 
 
-	char name[4];
-	int age;
-	int maxNumber = 3;
+	char name2[20];
+	int score2;
+	int maxNumber = 5;
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < maxNumber; i++)
 	{
-		fscanf(fptr2, "%s %d", name, &age);
-		printf("이름 : %s, 점수 : %d\n", name, age);
+		fscanf(fptr2, "%s %d", name2, &score2);
+		printf("이름 : %s, 점수 : %d\n", name2, score2);
 	}
 
 	fclose(fptr2);
@@ -129,4 +132,6 @@ int main()
 
 
 	SaveScore(myName, myScore2);
+
+	//LoadRank();
 }

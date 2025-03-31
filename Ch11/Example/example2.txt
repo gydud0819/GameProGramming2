@@ -1,3 +1,6 @@
 BBB 100
 CCC 23
 Picher 1000
+Catcher 750
+Infilder 500
+Outfilder 999

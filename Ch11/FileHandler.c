@@ -37,12 +37,17 @@ void LoadRank()
 
 	//fputc, fputs, fprintf		순서대로 문자, 문자열
 
-	char name[4];
-	int score;
-	fscanf(fptr, "%s %d", name, &score);
-	fprintf("이름 : %s 점수 : %d\n", name, score);
+	char name3[4];
+	int score3;
+	fscanf(fptr, "%s %d", name3, &score3);
+	fprintf("이름 : %s 점수 : %d\n", name3, score3);
 
 	//fgetc, fgets, fscanf	
 
 	fclose(fptr);
+}
+
+void SaveRankData(Rank* rankptr)
+{
+	rankptr->nickName[1] = "player1";
 }
