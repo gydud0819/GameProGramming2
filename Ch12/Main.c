@@ -10,7 +10,7 @@
 int main()
 {
 	printf("1. 파일을 저장하는 함수 만들기\n");
-	//SaveFileTemp();
+	FileSaveTemp();
 	printf("2. 파일을 읽어오는 함수 만들기\n");
 	FileLoadTemp();
 	printf("3. 랭크 구조체 구현하기\n\n");
@@ -18,16 +18,16 @@ int main()
 	Rank ranks[MAXRANK];
 	int order = 0;
 
-	AddRank(ranks, &order, "Bears", 500);
-	AddRank(ranks, &order, "Twins", 450);
-	AddRank(ranks, &order, "Tigers", 254);
-	AddRank(ranks, &order, "Dinos", 444);
-	AddRank(ranks, &order, "Lions", 768);
-	AddRank(ranks, &order, "Heros", 198);
-
-
-
-
+	AddRank(ranks, &order, "NC Dinos", 1);
+	AddRank(ranks, &order, "LG Twins", 3);
+	AddRank(ranks, &order, "Doosan Bears", 6);
+	AddRank(ranks, &order, "KIA Tigers", 12);
+	AddRank(ranks, &order, "Kt wiz", 1);
+	AddRank(ranks, &order, "Hanwha Eagles", 1);
+	AddRank(ranks, &order, "Samsung Lions", 8);
+	AddRank(ranks, &order, "Kiwoom Heroes", 0);
+	AddRank(ranks, &order, "SSG Landers", 5);
+	AddRank(ranks, &order, "Lotte Giants", 2);
 
 	//order = LoadRank(RANKFILEPATH, ranks);
 	
@@ -40,20 +40,21 @@ int main()
 	ranks[1].order = count;
 	ranks[1].score = 100;
 	strncpy(ranks[1].name, "Chloe", MAXLENGH);*/
+
 	if (order < MAXRANK)
 	{
-		printf("새로운 플레이어의 이름을 입력하세요.\n");
-		char newName[MAXLENGH];
+		printf("새로운 팀의 이름을 입력하세요.\n");
+		char newName[MAXLENGTH];
 		int newScore;
 
 		scanf("%49s", newName);
-		printf("점수를 입력하세요 :\n");
+		printf("우승횟수를 입력하세요.\n");
 		scanf("%d", &newScore);
 
-		AddRank(ranks, &order, newName, order);
+		AddRank(ranks, &order, newName, newScore);
 	}
-	PrintRanking(ranks, order);
+	PrintRanking(ranks, order);	// 랭킹 데이터 출력
 
-	SaveFile(RANKFILEPATH, ranks, order);
+	FileSave(RANKFILEPATH, ranks, order);
 }
 

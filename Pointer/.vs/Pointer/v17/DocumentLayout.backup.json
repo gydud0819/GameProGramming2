@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Pointer\\",
+  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Pointer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1DB7D8A-0549-482F-81BF-631C41BAF0EE}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D1DB7D8A-0549-482F-81BF-631C41BAF0EE}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Rank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1DB7D8A-0549-482F-81BF-631C41BAF0EE}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Rank.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D1DB7D8A-0549-482F-81BF-631C41BAF0EE}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1DB7D8A-0549-482F-81BF-631C41BAF0EE}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Rank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D1DB7D8A-0549-482F-81BF-631C41BAF0EE}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Rank.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +22,46 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Rank.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Rank.c",
-              "RelativeDocumentMoniker": "..\\Ch12\\Rank.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Rank.c",
-              "RelativeToolTip": "..\\Ch12\\Rank.c",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-01T07:04:21.442Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rank.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Rank.h",
-              "RelativeDocumentMoniker": "..\\Ch12\\Rank.h",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Rank.h",
-              "RelativeToolTip": "..\\Ch12\\Rank.h",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-01T07:04:10.298Z",
+              "Title": "Rank.c",
+              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Rank.c",
+              "RelativeDocumentMoniker": "..\\Ch12\\Rank.c",
+              "ToolTip": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Rank.c",
+              "RelativeToolTip": "..\\Ch12\\Rank.c",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-01T11:08:33.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Rank.h",
+              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Rank.h",
+              "RelativeDocumentMoniker": "..\\Ch12\\Rank.h",
+              "ToolTip": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Rank.h",
+              "RelativeToolTip": "..\\Ch12\\Rank.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-01T11:08:32.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Main.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Main.c",
+              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Main.c",
               "RelativeDocumentMoniker": "..\\Ch12\\Main.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProGramming2\\Ch12\\Main.c",
+              "ToolTip": "C:\\Users\\DPC\\Desktop\\GameProGramming2\\Ch12\\Main.c",
               "RelativeToolTip": "..\\Ch12\\Main.c",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-01T07:01:13.551Z",
+              "WhenOpened": "2025-04-01T11:06:50.199Z",
               "EditorCaption": ""
             }
           ]

@@ -1,27 +1,26 @@
-#pragma once
+ï»¿#pragma once
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-//#include <string.h>
 #define RANKFILEPATH "Rank.txt"
-#define MAXRANK 10
-#define MAXLENGH 50
+#define MAXRANK 12
+#define MAXLENGTH 50
 
 typedef struct _RANK
 {
-	int order;	// Ç¥
-	int score;	// Á¡¼ö
-	char name[MAXLENGH];
+	int order;	// í‘œ
+	int score;	// ì ìˆ˜
+	char name[MAXLENGTH];
 }Rank;
 
-void SaveFileTemp();
-void SaveFile(const char* FileName, Rank rank[], int count);
+void FileSaveTemp();
+void FileSave(const char* FileName, Rank rank[], int count);
 
 void FileLoadTemp();
 
-int LoadRank(const char* FileName, Rank rank[]);	// ¸Ş¸ğÀå¿¡ ÀúÀåµÈ count¸¦ ¹İÈ¯ÇÏ´Â ÇÔ¼ö 
+int LoadRank(const char* FileName, Rank rank[]);	// ë©”ëª¨ì¥ì— ì €ì¥ëœ countë¥¼ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜ 
 
-void PrintRanking(Rank rank[], int count);	// count ¼ö¸¸Å­ ·©Å·À» Ãâ·ÂÇÏ´Â ÇÔ¼ö 
+void PrintRanking(Rank rank[], int count);	// count ìˆ˜ë§Œí¼ ë­í‚¹ì„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜ 
 
-void AddRank(Rank rank[], int* order, const char* name, int score);	// µî¼ö´Â º¯ÇØ¾ß ÇÏ±â ¶§¹®¿¡ Æ÷ÀÎÅÍ¸¦ »ç¿ëÇÑ´Ù.
+void AddRank(Rank rank[], int* order, const char* name, int score);	// ë“±ìˆ˜ëŠ” ë³€í•´ì•¼ í•˜ê¸° ë•Œë¬¸ì— í¬ì¸í„°ë¥¼ ì‚¬ìš©í•œë‹¤.
 
-// scanf - ¼ıÀÚ ÁöÁ¤ 1. ·©Å· µî·Ï 2. ·©Å· º¸±â 3. ÇÁ·Î±×·¥ Á¾·á
+// scanf - ìˆ«ì ì§€ì • 1. ë­í‚¹ ë“±ë¡ 2. ë­í‚¹ ë³´ê¸° 3. í”„ë¡œê·¸ë¨ ì¢…ë£Œ

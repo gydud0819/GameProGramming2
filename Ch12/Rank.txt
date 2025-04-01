@@ -1,7 +1,11 @@
-1 500 Bears
-2 450 Twins
-3 254 Tigers
-4 444 Dinos
-5 768 Lions
-6 198 Heros
-7 6 fa
+1 1 NC Dinos
+2 3 LG Twins
+3 6 Doosan Bears
+4 12 KIA Tigers
+5 1 Kt wiz
+6 1 Hanwha Eagles
+7 8 Samsung Lions
+8 0 Kiwoom Heroes
+9 5 SSG Landers
+10 2 Lotte Giants
+11 1 ddd

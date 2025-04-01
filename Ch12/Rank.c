@@ -1,82 +1,84 @@
-#pragma once
+ï»¿#pragma once
 #include "Rank.h"
 
-void SaveFileTemp()
+void FileSaveTemp()
 {
-	FILE* fptr = fopen(RANKFILEPATH, "w");	// µÚ¿¡ ¾µ°ÇÁö ÀĞ¾î¿Ã°ÇÁö »ı°¢ÇØ¼­ »ç¿ëÇØ¾ß ÇÑ´Ù.
-	// fputc	ÀÛÀº µû¿ÈÇ¥¸¦ »ç¿ëÇÑ´Ù.
+	FILE* fp = fopen(RANKFILEPATH, "w");	// ë’¤ì— ì“¸ê±´ì§€ ì½ì–´ì˜¬ê±´ì§€ ìƒê°í•´ì„œ ì‚¬ìš©í•´ì•¼ í•œë‹¤.
+	// fputc	ì‘ì€ ë”°ì˜´í‘œë¥¼ ì‚¬ìš©í•œë‹¤.
 	/*fputc('a', fptr);
 	fputc('\n', fptr);
 	fputc('a', fptr);
 	fputc('a', fptr);*/
-	// fputs	¹®ÀÚ¿­·Î ÀúÀåÇÏ¸ç Å« µû¿ÈÇ¥¸¦ »ç¿ëÇÑ´Ù. 
+	// fputs	ë¬¸ìì—´ë¡œ ì €ì¥í•˜ë©° í° ë”°ì˜´í‘œë¥¼ ì‚¬ìš©í•œë‹¤. 
 	//fputs("aaa", fptr);
 	// fprintf
-	fprintf(fptr, "%d %s %d\n", 1, "Amy", 5);
-	fclose(fptr);
+	fprintf(fp, "%d %s %d\n", 1, "Amy", 5);
+	fclose(fp);
 }
 
-void SaveFile(const char* FileName, Rank rank[], int count)
+void FileSave(const char* FileName, Rank rank[], int count)
 {
-	FILE* fptr2 = fopen(FileName, "w");
+	FILE* fptr = fopen(FileName, "w");
+
 	for (int i = 0; i < count; i++)
 	{
-		fprintf(fptr2, "%d %d %s\n", rank[i].order, rank[i].score, rank[i].name);
+		fprintf(fptr, "%d %d %s\n", rank[i].order, rank[i].score, rank[i].name);
 
 	}
+	fclose(fptr);
 }
 
 void FileLoadTemp()
 {
-	FILE* fptr3 = fopen("Text.txt", "r");
+	FILE* fp2 = fopen("Text.txt", "r");
 
-	char mstring[12];
-	fgets(mstring, 12, fptr3);
-	printf("%s\n", mstring);
+	/*char mstring[12];
+	fgets(mstring, 12, fp2);
+	printf("%s\n", mstring);*/
 
 	int order = 0;
 	int score = 0;
 
-	char name[MAXLENGH];
+	char name[MAXLENGTH];
 
-	fscanf(fptr3, "%d %d %s", &order, &score, name);
+	fscanf(fp2, "%d %d %4s", &order, &score, name);
 
-	//printf("µî¼ö: %d, Á¡¼ö : %d, ÀÌ¸§ : %s", order, score, name);
+	printf("ìˆœì„œ: %d, ì ìˆ˜ : %d, ì´ë¦„ : %s\n", order, score, name);
 
-	fclose(fptr3);
+	fclose(fp2);
 }
 
 int LoadRank(const char* FileName, Rank rank[])
 {
 	int count = 0;
 
-	FILE* fptr2 = fopen(FileName, "r");
+	FILE* fptr = fopen(FileName, "r");
 
-	if (fptr2 == NULL)
+	if (fptr == NULL)
 	{
-		printf("ÆÄÀÏ ¿­±â ½ÇÆĞ\n");
+		printf("íŒŒì¼ ì—´ê¸° ì‹¤íŒ¨\n");
 		return;
 	}
 	
-	while (fscanf(fptr2, "%d %d %49s", &rank[count].order, &rank[count].score, rank[count].name) != EOF)	// ÆÄÀÏÀÌ ³¡³¯¶§±îÁö ÀĞ¾î¿À´Â ÄÚµå 
+	while (fscanf(fptr, "%d %d %49s", &rank[count].order, &rank[count].score, rank[count].name) != EOF)	// íŒŒì¼ì´ ëë‚ ë•Œê¹Œì§€ ì½ì–´ì˜¤ëŠ” ì½”ë“œ 
 	{
 		count++;
 	}
-	fclose(fptr2);
+	fclose(fptr);
 	
 	return count;
 }
 
 void PrintRanking(Rank rank[], int count)
 {
-	// Å×µÎ¸® ¸¸µé±â
-	printf("+------+------+------------------+\n");
-	printf("| µî¼ö | Á¡¼ö |    ÆÀ ÀÌ¸§       |\n");
-	printf("+------+------+------------------+\n");
+	// í…Œë‘ë¦¬ ë§Œë“¤ê¸°
+	printf("+------+----------+------------------+\n");
+	printf("| ìˆœì„œ | ìš°ìŠ¹ íšŸìˆ˜|  íŒ€ ì´ë¦„         |\n");
+	printf("+------+----------+------------------+\n");
 	for (int i = 0; i < count; i++)
 	{
-		printf("| %4d | %4d | %16s |\n", rank[i].order, rank[i].score, rank[i].name);	// µî¼ö, Á¡¼ö, ÀÌ¸§ ¼ø
-		printf("+------+------+------------------+\n");
+		printf("| %4d | %4d     | %16s |\n", rank[i].order, rank[i].score, rank[i].name);	// ë“±ìˆ˜, ì ìˆ˜, ì´ë¦„ ìˆœ
+		printf("+------+----------+------------------+\n");
 	}
 }
 
@@ -84,15 +86,15 @@ void AddRank(Rank rank[], int* order, const char* name, int score)
 {
 	if (*order < MAXRANK)
 	{
-		rank[*order].order = *order + 1;	// [] ¼Ó ¼ıÀÚ´Â ¼ø¼­
+		rank[*order].order = *order + 1;	// [] ì† ìˆ«ìëŠ” ìˆœì„œ
 		rank[*order].score = score;
-		strncpy(rank[*order].name, name, MAXLENGH - 1);
-		rank[*order].name[MAXLENGH - 1] = '\0';
+		strncpy(rank[*order].name, name, MAXLENGTH - 1);
+		rank[*order].name[MAXLENGTH - 1] = '\0';
 		(*order)++;
 
 	}
 	else
 	{
-		printf("ÃÖ´Ù ÇÃ·¹ÀÌ¾î ÀúÀå ¼ö¸¦ ÃÊ°úÇÏ¿´½À´Ï´Ù.\n");
+		printf("ìµœë‹¤ í”Œë ˆì´ì–´ ì €ì¥ ìˆ˜ë¥¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤.\n");
 	}
 }
