@@ -1,2 +1,5 @@
 ﻿  Item.c
-  Ch04.vcxproj -> C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Ch04.exe
+  main.c
+  코드를 생성하고 있습니다...
+C:\Users\Administrator\Desktop\GameProGramming2\Ch04\main.c(137,6): warning C4101: 'number' :참조되지 않은 지역 변수입니다.
+  Ch04.vcxproj -> C:\Users\Administrator\Desktop\GameProGramming2\Pointer\x64\Debug\Ch04.exe

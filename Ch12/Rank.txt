@@ -1,0 +1,7 @@
+1 500 Bears
+2 450 Twins
+3 254 Tigers
+4 444 Dinos
+5 768 Lions
+6 198 Heros
+7 6 fa

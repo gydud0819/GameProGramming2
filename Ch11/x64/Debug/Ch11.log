@@ -1,2 +1,5 @@
-﻿  Main.c
-  Ch11.vcxproj -> C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Ch11.exe
+﻿  FileHandler.c
+  Main.c
+C:\Users\Administrator\Desktop\GameProGramming2\Ch11\FileHandler.c(43,10): warning C4133: '함수': 'char [21]'과(와) 'FILE *const ' 사이의 형식이 호환되지 않습니다.
+  코드를 생성하고 있습니다...
+  Ch11.vcxproj -> C:\Users\Administrator\Desktop\GameProGramming2\Pointer\x64\Debug\Ch11.exe

@@ -1,2 +1,6 @@
-﻿  struct.c
-  Ch05.vcxproj -> C:\Users\DPC\Desktop\GameProGramming2\Pointer\x64\Debug\Ch05.exe
+﻿  Main.c
+  struct.c
+  코드를 생성하고 있습니다...
+C:\Users\Administrator\Desktop\GameProGramming2\Ch05\Main.c(35,7): warning C4090: '초기화 중': 다른 'const' 한정자
+C:\Users\Administrator\Desktop\GameProGramming2\Ch05\Main.c(68,17): warning C4244: '초기화 중': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Ch05.vcxproj -> C:\Users\Administrator\Desktop\GameProGramming2\Pointer\x64\Debug\Ch05.exe
