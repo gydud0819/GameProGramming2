@@ -1,11 +1,4 @@
-1 1 NC Dinos
-2 3 LG Twins
-3 6 Doosan Bears
-4 12 KIA Tigers
-5 1 Kt wiz
-6 1 Hanwha Eagles
-7 8 Samsung Lions
-8 0 Kiwoom Heroes
-9 5 SSG Landers
-10 2 Lotte Giants
-11 1 ddd
+1 100 NC_Dinos
+2 120 AC_Dinos
+3 140 BC_Dinos
+4 160 CC_Dinos
