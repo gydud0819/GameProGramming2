@@ -66,10 +66,9 @@ int main()
 			FileSave(RANKFILEPATH, ranks, order);
 			return;
 		case 4:
-			DeleteRankData(ranks, order, 2);
+			DeleteRankData(ranks, &order, 2);
 			break;
 		case 5:
-			
 			firstRank = FindMaxIndex(ranks, order);
 			printf("랭킹 1위의 이름 : %s, 점수 : %d\n", ranks[firstRank].name, ranks[firstRank].score);
 			break;
@@ -80,16 +79,6 @@ int main()
 			break;
 		}
 	}
-
 	
-
-	//PrintRanking(ranks, order);	// 데이터를 보여주는 함수
-	//AddRankData(ranks, &order);
-	//system("cls");
-	//PrintRanking(ranks, order);	// 데이터를 보여주는 함수
-
-
-
-
 }
 

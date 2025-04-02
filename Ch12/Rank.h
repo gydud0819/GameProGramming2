@@ -26,10 +26,10 @@ void PrintRanking(Rank rank[], int count);	// count 수만큼 랭킹을 출력�
 
 void AddRank(Rank rank[], int* order, const char* name, int score);	// 등수는 변해야 하기 때문에 포인터를 사용한다.
 
-void AddRankData(Rank rank[], int* order);
+void AddRankData(Rank rank[], int* order);			// 랭크를 추가하는 함수
 
 void DeleteRankData(Rank rank[], int* order, int index);	// 정보 삭제 함수
 
-int FindMaxIndex(Rank rank[], int size);
+int FindMaxIndex(Rank rank[], int size);			// 전체랭킹 1등을 찾아서 보여주는 함수
 
 // scanf - 숫자 지정 1. 랭킹 등록 2. 랭킹 보기 3. 프로그램 종료

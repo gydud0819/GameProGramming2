@@ -138,7 +138,7 @@ void DeleteRankData(Rank rank[], int* order, int index)
 
 	for (int i = index; i < *order - 1; i++)
 	{
-		rank[i] = rank[i + 1];
+		rank[i] = rank[i + 1];				// 현재 위치의 데이터를 다음 위치 데이터로 덮어쓴다. (좌측으로 1칸 이동)
 	}
 
 	(*order)--;		// 데이터를 삭제했기 때문에 현재 데이터의 총 개수를 1 감소 시킨다. 
@@ -155,7 +155,7 @@ int FindMaxIndex(Rank rank[], int size)
 
 	for (int i = 1; i < size; i++)
 	{
-		if (rank[i].score > Maxvalue)
+		if (rank[i].score > Maxvalue)	// i의 점수가 MaxValue보다 크면 가장 높은 플레이어가 1등이 되는 것
 		{
 			Maxvalue = rank[i].score;
 			index = i;
